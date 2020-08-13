@@ -29,7 +29,17 @@
     let inputBox = document.getElementById('number');
 
     inputBox.onkeyup = function(){
-         document.getElementById('printchatbox').innerText = inputBox.value;
+      console.log(inputBox.value);
+      let inputValue = Number(inputBox.value);
+      if (inputBox.value % 3 == 0) {
+        document.getElementById('printchatbox').innerText = "Fizz";
+      } else if (inputBox.value % 5 == 0) {
+        document.getElementById('printchatbox').innerText = "Buzz";
+      } else {
+        document.getElementById('printchatbox').innerText = "FizzBuzz";
+      }
+
+       //  document.getElementById('printchatbox').innerText = inputBox.value;
 }
     //var params = '';
    // for( var i=0; i<document.getElementById("#number").elements.length; i++ )
