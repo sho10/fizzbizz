@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sho Hasegawa</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class = "form">
+  <h2>Enter your Fizzbizz number here</h2>
+  <form>
+    <input type="number" id="number" name="Type in a number">
+  </form>
+  <h3 id="printchatbox">input number above</h2>
+</div>
+
+
+
+
+
+
+  <div class="bar"></div>
+  <div class="container d-flex flex-column justify-content-center">
+
+  <script>
+    let inputBox = document.getElementById('number');
+
+    inputBox.onkeyup = function(){
+         document.getElementById('printchatbox').innerText = inputBox.value;
+}
+    //var params = '';
+   // for( var i=0; i<document.getElementById("#number").elements.length; i++ )
+   // {
+    //   var fieldName = document.getElementById("#number").elements[i].name;
+
+   // use the fields, put them in a array, etc.
+
+   // or, add them to a key-value pair strings,
+   // as in regular POST
+
+      //params += fieldName + '=' + fieldValue + '&';
+//}
+
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
